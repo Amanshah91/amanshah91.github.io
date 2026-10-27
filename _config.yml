@@ -1,7 +1,7 @@
 title: Aman Shah
 description: Network architect for live media over IP (SMPTE ST 2110, PTP) and AI infrastructure. Technical Lead at Arista Networks.
 author:
-  name: Aman Sushil Shah
+  name: Aman Shah
 
 # Your site address
 url: "https://amanshah.live"
@@ -12,7 +12,7 @@ timezone: America/New_York
 markdown: kramdown
 
 social:
-  name: Aman Sushil Shah
+  name: Aman Shah
   links:
     - https://orcid.org/0009-0009-8628-4465
     - https://github.com/Amanshah91
