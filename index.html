@@ -1,0 +1,152 @@
+---
+layout: default
+---
+<div class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Network architecture · Live media over IP · AI infrastructure</p>
+      <h1>Aman Sushil Shah</h1>
+      <p class="lede">I design the networks behind live television and large compute clusters: SMPTE ST 2110 media fabrics with precision timing, and scale-out Ethernet for GPU deployments. Over eleven years at Arista Networks I have led architecture for some of the largest IP broadcast facilities in the United States.</p>
+    </div>
+    <div>
+      <div class="ruler" aria-hidden="true"></div>
+      <dl class="facts">
+        <dt>Role</dt><dd>Technical Lead, Arista Networks</dd>
+        <dt>Since</dt><dd>2015</dd>
+        <dt>Based</dt><dd>New York metro area</dd>
+        <dt>Field</dt><dd>SMPTE ST 2110 · PTP · AI fabrics</dd>
+        <dt>ORCID</dt><dd><a href="https://orcid.org/0009-0009-8628-4465">0009-0009-8628-4465</a></dd>
+      </dl>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="shead"><h2>Focus areas</h2></div>
+    <div class="chips">
+      <span>SMPTE ST 2110</span>
+      <span>PTP / SMPTE ST 2059-2</span>
+      <span>ST 2022-7 red/blue redundancy</span>
+      <span>Multicast at facility scale</span>
+      <span>NMOS IS-04 / IS-05</span>
+      <span>400G / 800G spine-leaf fabrics</span>
+      <span>DWDM and 400G WAN contribution</span>
+      <span>AI cluster networking (RoCEv2)</span>
+      <span>Network automation</span>
+      <span>Network access control</span>
+    </div>
+  </section>
+
+  <section class="block" id="writing">
+    <div class="shead"><h2>Writing</h2><p>{{ site.posts.size }} published</p></div>
+    {% if site.posts.size > 0 %}
+    <ul class="rows">
+      {% for p in site.posts %}
+      <li class="row">
+        <span class="when">{{ p.date | date: "%b %-d, %Y" }}</span>
+        <div>
+          <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+          {% if p.summary %}<p class="sum">{{ p.summary }}</p>{% endif %}
+          {% if p.venue %}<p class="sub">Originally published in {{ p.venue }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty">Articles on ST 2110 facility design, precision timing and AI networking are on the way.</p>
+    {% endif %}
+  </section>
+
+  <section class="block" id="talks">
+    <div class="shead"><h2>Talks and publications</h2><p>Bylined work in professional venues</p></div>
+    <ul class="rows">
+      {% for u in site.data.pubs %}
+      <li class="row">
+        <span class="when">{{ u.date }}</span>
+        <div>
+          <p class="label">{{ u.kind }}</p>
+          <h3>{% if u.url %}<a href="{{ u.url }}">{{ u.title }}</a>{% else %}{{ u.title }}{% endif %}</h3>
+          <p class="sub">{{ u.venue }}</p>
+        </div>
+        <div class="side"><span class="pill{% unless u.status == 'In progress' %} done{% endunless %}">{{ u.status }}</span></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="block" id="work">
+    <div class="shead"><h2>Selected work</h2><p>Customers are described without names</p></div>
+    <div class="grid2">
+      <article class="card">
+        <p class="label">Broadcast · about 1,000 switches</p>
+        <h3>National broadcast news headquarters</h3>
+        <p>Lead network architect for two years on a new New York headquarters: the ST 2110 media network with red/blue ST 2022-7 redundancy and PTP timing, plus the data center and campus networks, across studios, control rooms and production spaces.</p>
+      </article>
+      <article class="card">
+        <p class="label">Broadcast · migration</p>
+        <h3>Cable news move from SDI to IP</h3>
+        <p>Led the network side of a 24/7 cable news network’s migration from SDI to an IP production plant, keeping the channel on air through cutover.</p>
+      </article>
+      <article class="card">
+        <p class="label">Sports · 800G · WAN</p>
+        <h3>Sports network headquarters and league venues</h3>
+        <p>Architecture for a sports network’s headquarters move: campus, 800G ST 2110 fabric and DWDM/400G WAN contribution, with replay switching across 30 ballparks.</p>
+      </article>
+      <article class="card">
+        <p class="label">Data center · AI</p>
+        <h3>Data center and AI fabrics</h3>
+        <p>Data centers with 100G storage backbones for global insurers, networks for New York City agencies, and scale-out Ethernet for customer GPU and CPU clusters.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="shead"><h2>Experience</h2><p>Arista Networks, New York</p></div>
+    <ol class="tl">
+      <li>
+        <span class="when">2021 – now</span>
+        <div class="body">
+          <h3>Technical Lead</h3>
+          <p class="org">Arista Networks</p>
+          <ul>
+            <li>Leads architecture for media-over-IP and AI networking customers.</li>
+            <li>Lead architect for a national broadcast headquarters network of about 1,000 switches.</li>
+            <li>Network architecture for a sports network headquarters move and league venue switching.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">2017 – 2021</span>
+        <div class="body">
+          <h3>Systems Engineer</h3>
+          <p class="org">Arista Networks</p>
+          <ul>
+            <li>Pre- and post-sales owner for enterprise and public sector accounts.</li>
+            <li>Designed data centers with 100G storage backbones for several global insurance companies.</li>
+            <li>Designed data center and campus networks for New York City agencies.</li>
+            <li>Team lead for CloudVision automation; built the New York engineering lab.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">2015 – 2017</span>
+        <div class="body">
+          <h3>Advanced Services Engineer</h3>
+          <p class="org">Arista Networks</p>
+          <ul>
+            <li>Deployment and support for financial services and enterprise customers.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <div class="shead"><h2>Education and memberships</h2></div>
+    <div class="edu">
+      <div><h3>M.S. Electrical Engineering</h3><p>New York University Tandon School of Engineering, 2015</p></div>
+      <div><h3>B.E. Biomedical Engineering</h3><p>University of Mumbai (D.J. Sanghvi College of Engineering), 2013</p></div>
+      <div><h3>SMPTE</h3><p>Member, Society of Motion Picture and Television Engineers</p></div>
+      <div><h3>ORCID</h3><p><a href="https://orcid.org/0009-0009-8628-4465">orcid.org/0009-0009-8628-4465</a></p></div>
+    </div>
+  </section>
+</div>

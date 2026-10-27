@@ -1,0 +1,18 @@
+# Talks and publications, newest first.
+# kind: Talk, Article, Paper, Book, Chapter or Press
+# status: Published, Delivered, Accepted or In progress
+# url: leave blank until there is a public link
+
+- kind: Article
+  title: SMPTE ST 2110 design best practices for live media facilities
+  venue: SMPTE
+  date: "2026"
+  status: In progress
+  url:
+
+- kind: Talk
+  title: PTP best practices (SMPTE PTP Bootcamp), co-presented with Ryan Morris
+  venue: NAB Show New York
+  date: Oct 2026
+  status: Delivered
+  url:
