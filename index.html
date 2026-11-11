@@ -57,10 +57,29 @@ layout: default
   </section>
   {% endif %}
 
-  <section class="block" id="talks">
-    <div class="shead"><h2>Talks and publications</h2><p>Bylined work in professional venues</p></div>
+  <section class="block" id="speaking">
+    <div class="shead"><h2>Speaking</h2><p>Conference sessions and technical training</p></div>
     <ul class="rows">
-      {% for u in site.data.pubs %}
+      {% for t in site.data.speaking %}
+      <li class="row">
+        <span class="when">{{ t.date }}</span>
+        <div>
+          <p class="label">{{ t.event }}{% if t.place %} · {{ t.place }}{% endif %}</p>
+          <h3>{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</h3>
+          {% if t.note %}<p class="sum">{{ t.note }}</p>{% endif %}
+        </div>
+        <div class="side"><span class="pill done">{{ t.kind }}</span></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% assign pubs = site.data.pubs | where_exp: "u", "u.kind != 'Talk'" %}
+  {% if pubs.size > 0 %}
+  <section class="block" id="publications">
+    <div class="shead"><h2>Publications</h2><p>Bylined work in professional venues</p></div>
+    <ul class="rows">
+      {% for u in pubs %}
       <li class="row">
         <span class="when">{{ u.date }}</span>
         <div>
@@ -73,6 +92,7 @@ layout: default
       {% endfor %}
     </ul>
   </section>
+  {% endif %}
 
   <section class="block" id="work">
     <div class="shead"><h2>Selected work</h2><p>Customers are described without names</p></div>
