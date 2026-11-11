@@ -1,0 +1,24 @@
+# Speaking engagements, newest first.
+# kind: Conference session, Bootcamp, Training, Panel, Webinar or Keynote
+# url: main link for the title. links: extra links shown under the entry (slides, recording, photos)
+
+- date: Nov 2026
+  title: Designing the Network for SMPTE ST 2110
+  kind: Training
+  event: 2026 MLB Tech Summit
+  place: Miami, FL
+  note: Training session for broadcast and IT engineering teams from MLB and clubs across the league, in person and online. Arista Networks was a technology partner of the summit.
+  url:
+
+- date: Oct 21, 2026
+  title: Designing PTP Networks for Scale, Resilience, and Failover
+  kind: Bootcamp
+  event: "NAB Show New York · SMPTE Bootcamp: Precision Timing for ST 2110"
+  place: Javits Center, New York, NY
+  note: "40-minute session, co-presented with Ryan Morris (Arista Networks). Takes PTP from theory into network design: how boundary clocks distribute timing across a facility, how topology, scale, redundancy, security and grandmaster failover affect system behavior when conditions change, and practical checks that confirm the timing architecture is performing as designed, not simply reporting that it is locked."
+  url: https://www.nabshow.com/new-york/education/smpte-bootcamp-precision-timing-for-st-2110/
+  links:
+    - label: Bootcamp program
+      url: https://www.nabshow.com/new-york/education/smpte-bootcamp-precision-timing-for-st-2110/
+    - label: Speaker profile
+      url: https://www.nabshow.com/speaker/aman-shah/
