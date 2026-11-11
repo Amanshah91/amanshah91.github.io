@@ -7,7 +7,7 @@
   kind: Training
   event: 2026 MLB Tech Summit
   place: Miami, FL
-  note: Led a training session on SMPTE ST 2110 best practices for broadcast and IT engineering teams from MLB and all league clubs, in person and online. Arista Networks was a technology partner of the summit.
+  note: "Led a training session on SMPTE ST 2110 best practices for broadcast and IT engineering teams from MLB and all league clubs, in person and online. Covered what matters most in a 2110 media network: reliability with ST 2022-7 red/blue and shared-fabric topologies, non-blocking performance, multicast distribution and bandwidth-aware media control, PTP design from grandmaster to endpoint, and monitoring and observability. Arista Networks was a technology partner of the summit."
   url:
   links:
     - label: LinkedIn post
