@@ -9,6 +9,9 @@
   place: Miami, FL
   note: Led the training session for broadcast and IT engineering teams from MLB and all league clubs, in person and online. Arista Networks was a technology partner of the summit.
   url:
+  links:
+    - label: LinkedIn post
+      url: https://lnkd.in/p/eckHXWV6
 
 - date: Oct 21, 2026
   title: Designing PTP Networks for Scale, Resilience, and Failover
