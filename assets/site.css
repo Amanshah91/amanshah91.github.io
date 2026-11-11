@@ -121,3 +121,4 @@ footer{padding-block:28px 48px;border-top:1px solid var(--line);color:var(--ink-
   .prose{font-size:18px}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.row .links{margin-top:6px;font-size:14px}
