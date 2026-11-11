@@ -3,11 +3,11 @@
 # url: main link for the title. links: extra links shown under the entry (slides, recording, photos)
 
 - date: Nov 2026
-  title: Designing the Network for SMPTE ST 2110
+  title: SMPTE ST 2110 Best Practices
   kind: Training
   event: 2026 MLB Tech Summit
   place: Miami, FL
-  note: Led the training session for broadcast and IT engineering teams from MLB and all league clubs, in person and online. Arista Networks was a technology partner of the summit.
+  note: Led a training session on SMPTE ST 2110 best practices for broadcast and IT engineering teams from MLB and all league clubs, in person and online. Arista Networks was a technology partner of the summit.
   url:
   links:
     - label: LinkedIn post
