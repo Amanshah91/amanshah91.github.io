@@ -48,9 +48,9 @@
 - year: "2014"
   items:
     - kind: Academic
-      text: "NYU graduate research: implemented and tested IP lookup (binary and multibit trie) and hierarchical-trie packet classification for router design in C++ (February – May 2014)"
+      text: "NYU graduate project: implemented and tested IP lookup (binary and multibit trie) and hierarchical-trie packet classification for router design in C++ (February – May 2014)"
     - kind: Academic
-      text: "NYU graduate research: analyzed network packet traces in Python for bit rate, capacity and traffic volume, and developed a round-robin scheduling scheme to balance load across switch-fabric ports"
+      text: "NYU graduate project: analyzed network packet traces in Python for bit rate, capacity and traffic volume, and developed a round-robin scheduling scheme to balance load across switch-fabric ports"
 
 - year: "2013"
   items:
