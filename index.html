@@ -121,6 +121,22 @@ layout: default
     </div>
   </section>
 
+  <section class="block" id="milestones">
+    <div class="shead"><h2>Milestones</h2><p>Year by year since {{ site.data.milestones.last.year }}</p></div>
+    <ol class="ms">
+      {% for y in site.data.milestones %}
+      <li>
+        <span class="ms-year">{{ y.year }}</span>
+        <ul>
+          {% for i in y.items %}
+          <li><span class="ms-kind ms-{{ i.kind | downcase }}">{{ i.kind }}</span><span class="ms-text">{{ i.text }}</span></li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
   <section class="block" id="experience">
     <div class="shead"><h2>Experience</h2><p>Arista Networks, New York</p></div>
     <ol class="tl">

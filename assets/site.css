@@ -122,3 +122,24 @@ footer{padding-block:28px 48px;border-top:1px solid var(--line);color:var(--ink-
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
 .row .links{margin-top:6px;font-size:14px}
+
+/* Milestones: year rail with dots, typed entries */
+.ms{list-style:none;margin:0;padding:0;position:relative}
+.ms::before{content:"";position:absolute;left:96px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.ms>li{display:grid;grid-template-columns:80px minmax(0,1fr);gap:0 34px;padding:0 0 22px;position:relative}
+.ms>li:last-child{padding-bottom:0}
+.ms>li::before{content:"";position:absolute;left:91px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--ink-3)}
+.ms>li:first-child::before{border-color:var(--accent);background:var(--accent)}
+.ms-year{font-family:var(--mono);font-size:15px;font-weight:500;color:var(--ink);text-align:right;line-height:1.5}
+.ms ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ms ul li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:baseline}
+.ms-kind{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding:2px 0}
+.ms-speaking,.ms-writing,.ms-recognition{color:var(--accent)}
+.ms-text{font-size:15.5px;color:var(--ink);max-width:66ch}
+@media (max-width:760px){
+  .ms::before{left:5px}
+  .ms>li{grid-template-columns:1fr;gap:8px;padding-left:26px}
+  .ms>li::before{left:0}
+  .ms-year{text-align:left}
+  .ms ul li{grid-template-columns:1fr;gap:0}
+}

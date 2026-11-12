@@ -1,0 +1,51 @@
+# Year-by-year milestones, newest first.
+# kind: Education, Career, Project, Speaking, Writing, Recognition
+# Keep customers unnamed, matching "Selected work".
+
+- year: "2026"
+  items:
+    - kind: Speaking
+      text: Led an SMPTE ST 2110 best-practices training for engineering teams from all MLB clubs at the 2026 MLB Tech Summit, Miami
+    - kind: Speaking
+      text: Co-presented "Designing PTP Networks for Scale, Resilience, and Failover" at the SMPTE PTP Bootcamp, NAB Show New York
+    - kind: Project
+      text: Architect for a sports network's headquarters move, including DWDM with 400G WAN links and replay switching across 30 ballparks
+
+- year: "2024"
+  items:
+    - kind: Project
+      text: Designed the office campus network for a New York City water-supply agency
+
+- year: "2023"
+  items:
+    - kind: Project
+      text: Designed a SCADA and security video network spanning the same agency's upstate reservoir sites
+
+- year: "2022"
+  items:
+    - kind: Project
+      text: Advised an international broadcaster on its ST 2110 and PTP design, later deployed in its Philippines data center and U.S. facilities
+
+- year: "2021"
+  items:
+    - kind: Career
+      text: Promoted to Technical Lead, Arista Networks
+    - kind: Project
+      text: Lead architect for two data centers for a New York City water-supply agency, in Queens and at its upstate reservoirs
+
+- year: "2017"
+  items:
+    - kind: Career
+      text: Promoted to Systems Engineer, owning enterprise and public-sector accounts pre- and post-sale
+
+- year: "2015"
+  items:
+    - kind: Career
+      text: Joined Arista Networks as an Advanced Services Engineer (August)
+    - kind: Education
+      text: M.S. Electrical Engineering, New York University Tandon School of Engineering
+
+- year: "2013"
+  items:
+    - kind: Education
+      text: B.E. Biomedical Engineering, University of Mumbai (D.J. Sanghvi College of Engineering)
