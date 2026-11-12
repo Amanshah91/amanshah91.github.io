@@ -1,0 +1,17 @@
+# Career and study phases shown as banners on the Milestones timeline.
+# Each year in milestones.yml points at one of these with `era:`.
+lead:
+  title: Technical Lead · Arista Networks
+  dates: 2021 – now
+se:
+  title: Systems Engineer · Arista Networks
+  dates: 2017 – 2021
+ase:
+  title: Advanced Services Engineer · Arista Networks
+  dates: 2015 – 2017
+nyu:
+  title: M.S. Electrical Engineering · NYU Tandon
+  dates: until 2015
+mumbai:
+  title: B.E. Biomedical Engineering · University of Mumbai
+  dates: until 2013

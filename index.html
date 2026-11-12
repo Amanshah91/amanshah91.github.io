@@ -123,18 +123,51 @@ layout: default
 
   <section class="block" id="milestones">
     <div class="shead"><h2>Milestones</h2><p>Year by year since {{ site.data.milestones.last.year }}</p></div>
+    <div class="ms-filter" role="group" aria-label="Filter milestones">
+      <button type="button" data-kind="all" aria-pressed="true">All</button>
+      {% assign kinds = "Career,Project,Speaking,Recognition,Writing,Academic,Education" | split: "," %}
+      {% for k in kinds %}<button type="button" data-kind="{{ k | downcase }}" class="k-{{ k | downcase }}" aria-pressed="false" hidden><i aria-hidden="true"></i>{{ k }}</button>{% endfor %}
+    </div>
     <ol class="ms">
+      {% assign prev_era = "" %}
       {% for y in site.data.milestones %}
-      <li>
-        <span class="ms-year">{{ y.year }}</span>
-        <ul>
+      {% if y.era and y.era != prev_era %}{% assign e = site.data.eras[y.era] %}
+      <li class="ms-era"><span class="ms-era-t">{{ e.title }}</span><span class="ms-era-d">{{ e.dates }}</span></li>
+      {% assign prev_era = y.era %}{% endif %}
+      <li class="ms-yr{% if forloop.first %} is-now{% endif %}">
+        <div class="ms-y"><span>{{ y.year }}</span></div>
+        <ul class="ms-items">
           {% for i in y.items %}
-          <li><span class="ms-kind ms-{{ i.kind | downcase }}">{{ i.kind }}</span><span class="ms-text">{{ i.text }}</span></li>
+          <li class="ms-item k-{{ i.kind | downcase }}" data-kind="{{ i.kind | downcase }}"><span class="ms-tag">{{ i.kind }}</span><p>{{ i.text }}</p></li>
           {% endfor %}
         </ul>
       </li>
       {% endfor %}
     </ol>
+    <script>
+    (function(){
+      var root=document.getElementById('milestones'); if(!root) return;
+      var items=[].slice.call(root.querySelectorAll('.ms-item'));
+      var btns=[].slice.call(root.querySelectorAll('.ms-filter button'));
+      btns.forEach(function(b){ var k=b.dataset.kind; if(k==='all'||items.some(function(i){return i.dataset.kind===k})) b.hidden=false; });
+      function apply(k){
+        btns.forEach(function(b){b.setAttribute('aria-pressed', String(b.dataset.kind===k))});
+        items.forEach(function(i){i.hidden=!(k==='all'||i.dataset.kind===k)});
+        var rows=[].slice.call(root.querySelectorAll('.ms>li')), era=null, eraHas=false;
+        rows.forEach(function(r){
+          if(r.classList.contains('ms-era')){ if(era) era.hidden=!eraHas; era=r; eraHas=false; return; }
+          var vis=[].some.call(r.querySelectorAll('.ms-item'),function(i){return !i.hidden});
+          r.hidden=!vis; if(vis) eraHas=true;
+        });
+        if(era) era.hidden=!eraHas;
+      }
+      btns.forEach(function(b){ b.addEventListener('click',function(){apply(b.dataset.kind)}) });
+      if(!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      root.classList.add('ms-anim');
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);} })},{rootMargin:'0px 0px -8% 0px'});
+      items.forEach(function(i){io.observe(i)});
+    })();
+    </script>
   </section>
 
   <section class="block" id="experience">

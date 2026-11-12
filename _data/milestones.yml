@@ -1,8 +1,10 @@
 # Year-by-year milestones, newest first.
 # kind: Education, Academic, Career, Project, Speaking, Writing, Recognition
+# era: key from eras.yml (banner appears where a new era starts)
 # Keep customers unnamed, matching "Selected work".
 
 - year: "2026"
+  era: lead
   items:
     - kind: Speaking
       text: Led an SMPTE ST 2110 best-practices training for engineering teams from all MLB clubs at the 2026 MLB Tech Summit, Miami
@@ -12,21 +14,25 @@
       text: Architect for a sports network's headquarters move, including DWDM with 400G WAN links and replay switching across 30 ballparks
 
 - year: "2024"
+  era: lead
   items:
     - kind: Project
       text: Designed the office campus network for a New York City water-supply agency
 
 - year: "2023"
+  era: lead
   items:
     - kind: Project
       text: Designed a SCADA and security video network spanning the same agency's upstate reservoir sites
 
 - year: "2022"
+  era: lead
   items:
     - kind: Project
       text: Advised an international broadcaster on its ST 2110 and PTP design, later deployed in its Philippines data center and U.S. facilities
 
 - year: "2021"
+  era: lead
   items:
     - kind: Career
       text: Promoted to Technical Lead, Arista Networks
@@ -34,11 +40,13 @@
       text: Lead architect for two data centers for a New York City water-supply agency, in Queens and at its upstate reservoirs
 
 - year: "2017"
+  era: se
   items:
     - kind: Career
       text: Promoted to Systems Engineer, owning enterprise and public-sector accounts pre- and post-sale
 
 - year: "2015"
+  era: ase
   items:
     - kind: Career
       text: Joined Arista Networks as an Advanced Services Engineer (August)
@@ -46,6 +54,7 @@
       text: M.S. Electrical Engineering, New York University Tandon School of Engineering
 
 - year: "2014"
+  era: nyu
   items:
     - kind: Academic
       text: "NYU graduate project: implemented and tested IP lookup (binary and multibit trie) and hierarchical-trie packet classification for router design in C++ (February – May 2014)"
@@ -53,6 +62,7 @@
       text: "NYU graduate project: analyzed network packet traces in Python for bit rate, capacity and traffic volume, and developed a round-robin scheduling scheme to balance load across switch-fabric ports"
 
 - year: "2013"
+  era: mumbai
   items:
     - kind: Academic
       text: Completed the final-year project "On Call Medical Supporting System" (June 2012 – April 2013), a telehealth platform with an Arduino body-temperature sensor, digital vital-sign reports sent to doctors, and Google Maps lookup of the nearest hospitals, doctors and pharmacies
@@ -62,6 +72,7 @@
       text: Graduated from the University of Mumbai with a Bachelor of Engineering in Biomedical Engineering (D.J. Sanghvi College of Engineering)
 
 - year: "2012"
+  era: mumbai
   items:
     - kind: Academic
       text: Built a microcontroller-based home security system with an alarm and Arduino distance sensor (January – April 2012)
