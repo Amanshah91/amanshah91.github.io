@@ -1,5 +1,5 @@
 # Year-by-year milestones, newest first.
-# kind: Education, Career, Project, Speaking, Writing, Recognition
+# kind: Education, Academic, Career, Project, Speaking, Writing, Recognition
 # Keep customers unnamed, matching "Selected work".
 
 - year: "2026"
@@ -45,9 +45,23 @@
     - kind: Education
       text: M.S. Electrical Engineering, New York University Tandon School of Engineering
 
+- year: "2014"
+  items:
+    - kind: Academic
+      text: "NYU graduate research: implemented and tested IP lookup (binary and multibit trie) and hierarchical-trie packet classification for router design in C++ (February – May 2014)"
+    - kind: Academic
+      text: "NYU graduate research: analyzed network packet traces in Python for bit rate, capacity and traffic volume, and developed a round-robin scheduling scheme to balance load across switch-fabric ports"
+
 - year: "2013"
   items:
+    - kind: Academic
+      text: Completed the final-year project "On Call Medical Supporting System" (June 2012 – April 2013), a telehealth platform with an Arduino body-temperature sensor, digital vital-sign reports sent to doctors, and Google Maps lookup of the nearest hospitals, doctors and pharmacies
     - kind: Writing
-      text: Co-authored "On Call Medical Supporting System", a paper on a telehealth platform for at-home vital-sign measurement, digital reports to doctors and emergency ambulance dispatch
+      text: Co-authored a paper on the On Call Medical Supporting System
     - kind: Education
       text: Graduated from the University of Mumbai with a Bachelor of Engineering in Biomedical Engineering (D.J. Sanghvi College of Engineering)
+
+- year: "2012"
+  items:
+    - kind: Academic
+      text: Built a microcontroller-based home security system with an alarm and Arduino distance sensor (January – April 2012)
