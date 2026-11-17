@@ -58,7 +58,7 @@ Edit `_data/pubs.yml` and add an entry at the top, following the ones already th
 
 ## Change profile text
 
-The profile, selected work and experience sections are in `index.html`. Edit the text between the tags and commit.
+The profile and projects sections are in `index.html`; experience is in `_data/experience.yml`. Edit the text between the tags and commit.
 
 ## For the EB-1A file
 
