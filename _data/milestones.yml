@@ -6,6 +6,8 @@
 - year: "2026"
   era: lead
   items:
+    - kind: Writing
+      text: Published "What AI Clusters Can Learn from Live Broadcast, Now That MXL Is Bringing Them Together" in Tech Times
     - kind: Speaking
       text: Led an SMPTE ST 2110 best-practices training for engineering teams from all MLB clubs at the 2026 MLB Tech Summit, Miami
     - kind: Speaking

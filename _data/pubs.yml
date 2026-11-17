@@ -4,6 +4,13 @@
 # url: leave blank until there is a public link
 
 - kind: Article
+  title: What AI Clusters Can Learn from Live Broadcast, Now That MXL Is Bringing Them Together
+  venue: Tech Times
+  date: Nov 16, 2026
+  status: Published
+  url: https://www.techtimes.com/articles/330898/20261116/what-ai-clusters-can-learn-live-broadcast-now-that-mxl-bringing-them-together.htm
+
+- kind: Article
   title: SMPTE ST 2110 design best practices for live media facilities
   venue: SMPTE
   date: "2026"
