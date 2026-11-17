@@ -1,0 +1,23 @@
+<ol class="tl{% if include.collapsed %} tl-collapsed{% endif %}">
+  {% for r in site.data.experience %}
+  <li>
+    <span class="when">{{ r.dates }}</span>
+    <div class="body">
+      {% if include.collapsed %}
+      <details class="role">
+        <summary>
+          <span class="role-head"><h3>{{ r.title }}</h3><span class="org">{{ r.org }} · {{ r.points.size }} highlights</span></span>
+          <span class="role-sum">{{ r.summary }}</span>
+          <span class="role-toggle" aria-hidden="true"></span>
+        </summary>
+        <ul>{% for p in r.points %}<li>{{ p }}</li>{% endfor %}</ul>
+      </details>
+      {% else %}
+      <h3>{{ r.title }}</h3>
+      <p class="org">{{ r.org }}</p>
+      <ul>{% for p in r.points %}<li>{{ p }}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>

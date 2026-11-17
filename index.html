@@ -171,56 +171,8 @@ layout: default
   </section>
 
   <section class="block" id="experience">
-    <div class="shead"><h2>Experience</h2><p>Arista Networks, New York</p></div>
-    <ol class="tl">
-      <li>
-        <span class="when">2021 – now</span>
-        <div class="body">
-          <h3>Technical Lead</h3>
-          <p class="org">Arista Networks</p>
-          <ul>
-            <li>Lead network architect for a national broadcaster's new New York headquarters: data center, campus and SMPTE ST 2110 media network of about 1,000 switches, carried from design through go-live.</li>
-            <li>Lead architect for a leading U.S. cable news network's move from SDI to SMPTE ST 2110, upgrading live broadcast systems to IP. Designed its CI/CD automation pipeline, with NetBox as the source of truth, Ansible and CloudVision for configuration and switch management, and Batfish for automated validation; provided engineering support during 2024 presidential election coverage.</li>
-            <li>Architect for a sports network's headquarters move: designed the DWDM system with 400G WAN links to its core sites, alongside an 800G ST 2110 media network and a wired and wireless PoE campus. Lead technical advisor for the switching used for video replay and transmission at all 30 league ballparks.</li>
-            <li>Advised an international broadcaster on its ST 2110 and PTP design, which it implemented in its Philippines data center and U.S. facilities.</li>
-            <li>Lead architect for a New York City water-supply agency: two data centers in Queens and upstate at its reservoirs, a SCADA and security video network across reservoir sites, and its Queens office campus.</li>
-            <li>Designs scale-out Ethernet fabrics for customer GPU and CPU clusters running AI training and inference.</li>
-            <li>Won a competitive network access control evaluation against Forescout and Aruba ClearPass for a large global logistics customer, validating Arista AGNI on OT and IoT devices and defining its VLAN segmentation, 802.1X/MAB policy and passive-only profiling for sensitive devices.</li>
-            <li>Owns campus and data center refresh architectures, including Cisco Catalyst replacements, from design through validation and cutover.</li>
-            <li>Helped the account team deliver more than $30M in annual revenue across multiple years; mentors engineers and runs customer workshops and Arista Test Drive events.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <span class="when">2017 – 2021</span>
-        <div class="body">
-          <h3>Systems Engineer</h3>
-          <p class="org">Arista Networks</p>
-          <ul>
-            <li>Pre- and post-sales technical owner for enterprise and public-sector accounts: solution design, proofs of concept, RFP responses, customer workshops and Arista Test Drive events.</li>
-            <li>Designed next-generation data centers with 100G storage backbones for several global insurance companies.</li>
-            <li>Designed data center and campus networks for multiple New York City agencies, working with the city's IT department (DoITT) on connectivity to CityNet, the city's network.</li>
-            <li>CloudVision automation subject-matter expert for the New York team, deploying it for multiple customers.</li>
-            <li>Designed and built the New York systems engineering lab, with switches, a firewall, a storage appliance and DNS services, used for customer proofs of concept and product demonstrations.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <span class="when">2015 – 2017</span>
-        <div class="body">
-          <h3>Advanced Services Engineer</h3>
-          <p class="org">Arista Networks</p>
-          <ul>
-            <li>Dedicated post-sales engineer for strategic financial services and enterprise accounts, including low-latency trading environments.</li>
-            <li>Helped customers design and configure their data center networks, including integration with other vendors' equipment, and validated each deployment by testing traffic flows and endpoint connectivity.</li>
-            <li>Owned technical escalations and root-cause analysis, planned software upgrades, and reviewed customer architectures for performance and resilience.</li>
-            <li>Worked with Arista's system test team at its Santa Clara headquarters to build and validate VXLAN routing and bridging test beds for an EOS software release, on low-latency and deep-buffer switch platforms.</li>
-            <li>Deployed Arista's CloudVision management platform for a large financial information company's proof of concept in the United Kingdom.</li>
-            <li>Built virtual EOS (vEOS) automation test beds that the team adopted for its own testing.</li>
-          </ul>
-        </div>
-      </li>
-    </ol>
+    <div class="shead"><h2>Experience</h2><p><a href="{{ '/experience/' | relative_url }}">Full work experience &rarr;</a></p></div>
+    {% include experience.html collapsed="yes" %}
   </section>
 
   <section class="block">

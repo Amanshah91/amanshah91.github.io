@@ -1,0 +1,37 @@
+# Work experience, newest first. Shown collapsed on the home page and in full on /experience/.
+
+- title: Technical Lead
+  org: Arista Networks
+  dates: 2021 – now
+  summary: Architecture lead for broadcast, sports, public-sector and AI networking customers.
+  points:
+  - 'Lead network architect for a national broadcaster''s new New York headquarters: data center, campus and SMPTE ST 2110 media network of about 1,000 switches, carried from design through go-live.'
+  - Lead architect for a leading U.S. cable news network's move from SDI to SMPTE ST 2110, upgrading live broadcast systems to IP. Designed its CI/CD automation pipeline, with NetBox as the source of truth, Ansible and CloudVision for configuration and switch management, and Batfish for automated validation; provided engineering support during 2024 presidential election coverage.
+  - 'Architect for a sports network''s headquarters move: designed the DWDM system with 400G WAN links to its core sites, alongside an 800G ST 2110 media network and a wired and wireless PoE campus. Lead technical advisor for the switching used for video replay and transmission at all 30 league ballparks.'
+  - Advised an international broadcaster on its ST 2110 and PTP design, which it implemented in its Philippines data center and U.S. facilities.
+  - 'Lead architect for a New York City water-supply agency: two data centers in Queens and upstate at its reservoirs, a SCADA and security video network across reservoir sites, and its Queens office campus.'
+  - Designs scale-out Ethernet fabrics for customer GPU and CPU clusters running AI training and inference.
+  - Won a competitive network access control evaluation against Forescout and Aruba ClearPass for a large global logistics customer, validating Arista AGNI on OT and IoT devices and defining its VLAN segmentation, 802.1X/MAB policy and passive-only profiling for sensitive devices.
+  - Owns campus and data center refresh architectures, including Cisco Catalyst replacements, from design through validation and cutover.
+  - Helped the account team deliver more than $30M in annual revenue across multiple years; mentors engineers and runs customer workshops and Arista Test Drive events.
+- title: Systems Engineer
+  org: Arista Networks
+  dates: 2017 – 2021
+  summary: Pre- and post-sales technical owner for enterprise and public-sector accounts.
+  points:
+  - 'Pre- and post-sales technical owner for enterprise and public-sector accounts: solution design, proofs of concept, RFP responses, customer workshops and Arista Test Drive events.'
+  - Designed next-generation data centers with 100G storage backbones for several global insurance companies.
+  - Designed data center and campus networks for multiple New York City agencies, working with the city's IT department (DoITT) on connectivity to CityNet, the city's network.
+  - CloudVision automation subject-matter expert for the New York team, deploying it for multiple customers.
+  - Designed and built the New York systems engineering lab, with switches, a firewall, a storage appliance and DNS services, used for customer proofs of concept and product demonstrations.
+- title: Advanced Services Engineer
+  org: Arista Networks
+  dates: 2015 – 2017
+  summary: Post-sales engineering for strategic financial services and enterprise accounts.
+  points:
+  - Dedicated post-sales engineer for strategic financial services and enterprise accounts, including low-latency trading environments.
+  - Helped customers design and configure their data center networks, including integration with other vendors' equipment, and validated each deployment by testing traffic flows and endpoint connectivity.
+  - Owned technical escalations and root-cause analysis, planned software upgrades, and reviewed customer architectures for performance and resilience.
+  - Worked with Arista's system test team at its Santa Clara headquarters to build and validate VXLAN routing and bridging test beds for an EOS software release, on low-latency and deep-buffer switch platforms.
+  - Deployed Arista's CloudVision management platform for a large financial information company's proof of concept in the United Kingdom.
+  - Built virtual EOS (vEOS) automation test beds that the team adopted for its own testing.

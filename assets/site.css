@@ -166,3 +166,21 @@ footer{padding-block:28px 48px;border-top:1px solid var(--line);color:var(--ink-
 }
 @media (prefers-reduced-motion: reduce){.ms-item::before{animation:none!important}}
 
+
+/* Experience: collapsible roles on the home page */
+.role summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;align-items:start;padding:2px 0 4px;border-radius:6px}
+.role summary::-webkit-details-marker{display:none}
+.role summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.role-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px}
+.role-head .org{margin:0;font-size:14px;color:var(--ink-3)}
+.role-sum{grid-column:1;color:var(--ink-2);font-size:15px}
+.role-toggle{grid-column:2;grid-row:1 / span 2;align-self:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .2s,border-color .2s,background .2s}
+.role-toggle::before{content:"";width:8px;height:8px;border-right:2px solid var(--ink-2);border-bottom:2px solid var(--ink-2);transform:translateY(-2px) rotate(45deg)}
+.role summary:hover .role-toggle{border-color:var(--accent)}
+.role[open] .role-toggle{transform:rotate(180deg);background:var(--accent-soft);border-color:var(--accent)}
+.role[open] summary{margin-bottom:10px}
+.role summary:hover h3{color:var(--accent)}
+.page-first{border-top:0;padding-top:28px}
+.back{font-size:14px;margin-bottom:18px}
+.back a{color:var(--ink-2);text-decoration:none}
+.back a:hover{color:var(--accent)}
