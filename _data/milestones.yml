@@ -25,7 +25,7 @@
   era: lead
   items:
     - kind: Certification
-      text: "Earned Arista ACE: L6 certification (Arista Cloud Engineer, Levels 6 & 7)"
+      text: "Earned ACE: L6 (Arista Cloud Engineer: Level 6) and ACE: L7 (Arista Cloud Engineer: Level 7) certifications"
     - kind: Project
       text: Designed a SCADA and security video network spanning the same agency's upstate reservoir sites
 
