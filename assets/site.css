@@ -124,10 +124,10 @@ footer{padding-block:28px 48px;border-top:1px solid var(--line);color:var(--ink-
 .row .links{margin-top:6px;font-size:14px}
 
 /* Milestones: era banners on a rail, sticky years, typed cards */
-:root{--k-career:#9A5A12;--k-project:#2D5A9A;--k-speaking:var(--accent);--k-recognition:#86680A;--k-writing:#9C3656;--k-academic:#6A4C9C;--k-education:#6A4C9C}
-@media (prefers-color-scheme: dark){:root{--k-career:#E6AE68;--k-project:#8FB4EE;--k-recognition:#E2C35A;--k-writing:#E59AB1;--k-academic:#B9A3E6;--k-education:#B9A3E6}}
+:root{--k-career:#9A5A12;--k-project:#2D5A9A;--k-speaking:var(--accent);--k-recognition:#86680A;--k-writing:#9C3656;--k-academic:#6A4C9C;--k-education:#6A4C9C;--k-certification:#4F6B1E}
+@media (prefers-color-scheme: dark){:root{--k-career:#E6AE68;--k-project:#8FB4EE;--k-recognition:#E2C35A;--k-writing:#E59AB1;--k-academic:#B9A3E6;--k-education:#B9A3E6;--k-certification:#B4D07A}}
 .k-career{--k:var(--k-career)}.k-project{--k:var(--k-project)}.k-speaking{--k:var(--k-speaking)}.k-recognition{--k:var(--k-recognition)}
-.k-writing{--k:var(--k-writing)}.k-academic{--k:var(--k-academic)}.k-education{--k:var(--k-education)}
+.k-writing{--k:var(--k-writing)}.k-academic{--k:var(--k-academic)}.k-education{--k:var(--k-education)}.k-certification{--k:var(--k-certification)}
 .ms-filter{display:flex;flex-wrap:wrap;gap:8px;margin:-4px 0 26px}
 .ms-filter button{font:inherit;font-size:13px;display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);cursor:pointer;transition:border-color .15s,color .15s,background .15s}
 .ms-filter button[hidden]{display:none}

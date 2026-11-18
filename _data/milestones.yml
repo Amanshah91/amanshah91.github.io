@@ -1,5 +1,5 @@
 # Year-by-year milestones, newest first.
-# kind: Education, Academic, Career, Project, Speaking, Writing, Recognition
+# kind: Education, Academic, Certification, Career, Project, Speaking, Writing, Recognition
 # era: key from eras.yml (banner appears where a new era starts)
 # Keep customers unnamed, matching "Projects".
 
@@ -24,6 +24,8 @@
 - year: "2023"
   era: lead
   items:
+    - kind: Certification
+      text: "Earned Arista ACE: L6 certification (Arista Cloud Engineer, Levels 6 & 7)"
     - kind: Project
       text: Designed a SCADA and security video network spanning the same agency's upstate reservoir sites
 

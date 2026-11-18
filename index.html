@@ -129,7 +129,7 @@ layout: default
     <div class="shead"><h2>Milestones</h2><p>Year by year since {{ site.data.milestones.last.year }}</p></div>
     <div class="ms-filter" role="group" aria-label="Filter milestones">
       <button type="button" data-kind="all" aria-pressed="true">All</button>
-      {% assign kinds = "Career,Project,Speaking,Recognition,Writing,Academic,Education" | split: "," %}
+      {% assign kinds = "Career,Project,Speaking,Recognition,Certification,Writing,Academic,Education" | split: "," %}
       {% for k in kinds %}<button type="button" data-kind="{{ k | downcase }}" class="k-{{ k | downcase }}" aria-pressed="false" hidden><i aria-hidden="true"></i>{{ k }}</button>{% endfor %}
     </div>
     <ol class="ms">
@@ -180,10 +180,11 @@ layout: default
   </section>
 
   <section class="block">
-    <div class="shead"><h2>Education and memberships</h2></div>
+    <div class="shead"><h2>Education, certifications and memberships</h2></div>
     <div class="edu">
       <div><h3>M.S. Electrical Engineering</h3><p>New York University Tandon School of Engineering, 2015</p></div>
       <div><h3>B.E. Biomedical Engineering</h3><p>University of Mumbai (D.J. Sanghvi College of Engineering), 2013</p></div>
+      <div><h3>ACE: L6</h3><p>Arista Certified Engineer, Arista Cloud Engineer (Levels 6 &amp; 7), 2023</p></div>
       <div><h3>IEEE</h3><p>Member, Institute of Electrical and Electronics Engineers</p></div>
       <div><h3>SMPTE</h3><p>Member, Society of Motion Picture and Television Engineers</p></div>
       <div><h3>IET</h3><p>Member (MIET), Institution of Engineering and Technology</p></div>
