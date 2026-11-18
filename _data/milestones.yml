@@ -38,6 +38,8 @@
 - year: "2021"
   era: lead
   items:
+    - kind: Certification
+      text: "Earned ACE: L5 (Arista Cloud Engineer: Level 5) and ACE: L2 (Arista Cloud Engineer: Level 2) certifications"
     - kind: Career
       text: Promoted to Technical Lead, Arista Networks
     - kind: Project
