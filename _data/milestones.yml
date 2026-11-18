@@ -54,6 +54,8 @@
 - year: "2015"
   era: ase
   items:
+    - kind: Certification
+      text: Earned Cisco CCNA (Cisco Certified Network Associate) and CCNP (Cisco Certified Network Professional) certifications
     - kind: Career
       text: Joined Arista Networks as an Advanced Services Engineer (August)
     - kind: Education
