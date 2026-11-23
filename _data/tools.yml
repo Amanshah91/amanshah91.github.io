@@ -1,0 +1,11 @@
+# Tools and technologies used in day-to-day work, grouped.
+- group: Media over IP and timing
+  items: [SMPTE ST 2110, SMPTE ST 2022-7, "PTP (IEEE 1588 / SMPTE ST 2059)", NMOS IS-04 / IS-05, IGMP / PIM multicast]
+- group: Data center and AI fabrics
+  items: [EVPN / VXLAN, BGP, MLAG, RoCEv2, PFC / ECN congestion control, 400G / 800G interconnects]
+- group: Campus, transport and security
+  items: ["Wired, wireless and PoE campus", DWDM optical transport, 802.1X / MAB, Arista AGNI, Forescout, Aruba ClearPass]
+- group: Automation and validation
+  items: [Arista CloudVision, Arista Validated Designs (AVD), Ansible, Terraform, NetBox, Batfish, Python, Arista eAPI, CI/CD pipelines]
+- group: Platforms
+  items: [Arista EOS and switching platforms, Cisco Catalyst (migration and replacement)]

@@ -19,6 +19,8 @@ layout: default
         <dt>ORCID</dt><dd><a href="https://orcid.org/0009-0009-8628-4465">0009-0009-8628-4465</a></dd>
         <dt>GitHub</dt><dd><a href="https://github.com/Amanshah91">github.com/Amanshah91</a></dd>
         <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/shahaman">linkedin.com/in/shahaman</a></dd>
+        <dt>Tech Times</dt><dd><a href="https://www.techtimes.com/reporters/aman-shah">Author page</a></dd>
+        <dt>NAB Show</dt><dd><a href="https://www.nabshow.com/speaker/aman-shah/">Speaker profile</a></dd>
       </dl>
     </div>
   </div>
@@ -40,6 +42,15 @@ layout: default
       <span>Network automation</span>
       <span>Network security &amp; segmentation</span>
       <span>Network access control</span>
+    </div>
+  </section>
+
+  <section class="block" id="tools">
+    <div class="shead"><h2>Tools and technologies</h2><p>What I design with and work in day to day</p></div>
+    <div class="tools">
+      {% for t in site.data.tools %}
+      <div><h3>{{ t.group }}</h3><p>{% for i in t.items %}{{ i }}{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</p></div>
+      {% endfor %}
     </div>
   </section>
 
@@ -105,16 +116,19 @@ layout: default
       <article class="card">
         <p class="label">Broadcast · about 1,000 switches</p>
         <h3>National broadcast news headquarters</h3>
+        <p class="role"><span>Role</span> Lead network architect</p>
         <p>Lead network architect for two years on a new New York headquarters: the ST 2110 media network with red/blue ST 2022-7 redundancy and PTP timing, plus the data center and campus networks, across studios, control rooms and production spaces.</p>
       </article>
       <article class="card">
         <p class="label">Broadcast · migration</p>
         <h3>Cable news move from SDI to IP</h3>
+        <p class="role"><span>Role</span> Lead network architect</p>
         <p>Led the network side of a 24/7 cable news network’s migration from SDI to an IP production plant, keeping the channel on air through cutover.</p>
       </article>
       <article class="card">
         <p class="label">Sports · 800G · WAN</p>
         <h3>Sports network headquarters and league venues</h3>
+        <p class="role"><span>Role</span> DWDM designer and lead technical advisor</p>
         <p>Architecture for a sports network’s headquarters move: campus, 800G ST 2110 fabric and DWDM/400G WAN contribution, with replay switching across 30 ballparks.</p>
       </article>
       <article class="card">
@@ -175,21 +189,24 @@ layout: default
   </section>
 
   <section class="block" id="experience">
-    <div class="shead"><h2>Experience</h2><p><a href="{{ '/experience/' | relative_url }}">Full work experience &rarr;</a></p></div>
+    <div class="shead"><h2>Professional experience</h2><p><a href="{{ '/experience/' | relative_url }}">Full professional experience &rarr;</a></p></div>
     {% include experience.html collapsed="yes" %}
   </section>
 
   <section class="block">
     <div class="shead"><h2>Education, certifications and memberships</h2></div>
-    <div class="edu">
-      <div><h3>M.S. Electrical Engineering</h3><p>New York University Tandon School of Engineering, 2015</p></div>
-      <div><h3>B.E. Biomedical Engineering</h3><p>University of Mumbai (D.J. Sanghvi College of Engineering), 2013</p></div>
-      <div><h3>ACE: L6 &amp; ACE: L7</h3><p>ACE: L6 (Arista Cloud Engineer: Level 6) and ACE: L7 (Arista Cloud Engineer: Level 7), 2023</p></div>
-      <div><h3>ACE: L5 &amp; ACE: L2</h3><p>ACE: L5 (Arista Cloud Engineer: Level 5) and ACE: L2 (Arista Cloud Engineer: Level 2), 2021</p></div>
-      <div><h3>CCNA &amp; CCNP</h3><p>Cisco Certified Network Associate and Cisco Certified Network Professional, 2015</p></div>
-      <div><h3>IEEE</h3><p>Member, Institute of Electrical and Electronics Engineers</p></div>
-      <div><h3>SMPTE</h3><p>Member, Society of Motion Picture and Television Engineers</p></div>
-      <div><h3>IET</h3><p>Member (MIET), Institution of Engineering and Technology</p></div>
+    <div class="creds">
+      {% assign groups = "education:Education,certifications:Certifications,memberships:Memberships" | split: "," %}
+      {% for g in groups %}{% assign kv = g | split: ":" %}
+      <div class="cred-group">
+        <h3>{{ kv[1] }}</h3>
+        <ol>
+          {% for c in site.data.credentials[kv[0]] %}
+          <li><span class="cred-year">{% if c.year != "" %}{{ c.year }}{% else %}&mdash;{% endif %}</span><div><p class="cred-t">{{ c.title }}</p><p class="cred-d">{{ c.detail }}</p></div></li>
+          {% endfor %}
+        </ol>
+      </div>
+      {% endfor %}
     </div>
   </section>
 </div>
