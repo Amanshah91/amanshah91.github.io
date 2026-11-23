@@ -196,17 +196,30 @@ layout: default
   <section class="block">
     <div class="shead"><h2>Education, certifications and memberships</h2></div>
     <div class="creds">
-      {% assign groups = "education:Education,certifications:Certifications,memberships:Memberships" | split: "," %}
-      {% for g in groups %}{% assign kv = g | split: ":" %}
       <div class="cred-group">
-        <h3>{{ kv[1] }}</h3>
+        <h3>Education</h3>
         <ol>
-          {% for c in site.data.credentials[kv[0]] %}
-          <li><span class="cred-year">{% if c.year != "" %}{{ c.year }}{% else %}&mdash;{% endif %}</span><div><p class="cred-t">{{ c.title }}</p><p class="cred-d">{{ c.detail }}</p></div></li>
+          {% for c in site.data.credentials.education %}
+          <li><span class="cred-year">{% if c.year and c.year != "" %}{{ c.year }}{% else %}&mdash;{% endif %}</span><div><p class="cred-t">{{ c.title }}</p><p class="cred-d">{{ c.detail }}</p></div></li>
           {% endfor %}
         </ol>
       </div>
-      {% endfor %}
+      <div class="cred-group">
+        <h3>Certifications</h3>
+        <ol>
+          {% for c in site.data.credentials.certifications %}
+          <li><span class="cred-year">{% if c.year and c.year != "" %}{{ c.year }}{% else %}&mdash;{% endif %}</span><div><p class="cred-t">{{ c.title }}</p><p class="cred-d">{{ c.detail }}</p></div></li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="cred-group">
+        <h3>Memberships</h3>
+        <ol>
+          {% for c in site.data.credentials.memberships %}
+          <li><span class="cred-year">{% if c.year and c.year != "" %}{{ c.year }}{% else %}&mdash;{% endif %}</span><div><p class="cred-t">{{ c.title }}</p><p class="cred-d">{{ c.detail }}</p></div></li>
+          {% endfor %}
+        </ol>
+      </div>
     </div>
   </section>
 </div>
